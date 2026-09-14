@@ -8,6 +8,6 @@
 
         public decimal Price { get; set; }
 
-       public string GetFormattedPrice() => $"R$ {Price:0.00}".Replace(".", ",");
+       public string GetFormattedPrice() => Price.ToString("0.00");
     }
 }

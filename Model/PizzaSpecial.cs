@@ -16,6 +16,6 @@
 
         public string ImageUrl { get; set; }
 
-        public string GetFormattedBasePrice() => $"R$ {BasePrice:0.00}".Replace(".", ",");
+        public string GetFormattedBasePrice() =>  BasePrice.ToString("0.00");
     }
 }

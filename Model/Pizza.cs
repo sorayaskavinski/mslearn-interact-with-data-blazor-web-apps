@@ -36,7 +36,7 @@ namespace BlazingPizza
 
         public string GetFormattedTotalPrice()
         {
-            return $"R$ {GetTotalPrice():0.00}".Replace(".", ",");
+            return GetTotalPrice().ToString("0.00");
         }
     }
 }
